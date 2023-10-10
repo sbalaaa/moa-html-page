@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .header {
+    border:2px solid DodgerBlue;
+    background-color: #ffffff;
+    padding: 1px;
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .login {
+    border:2px solid DodgerBlue;
+    background-color: #ffffff;
+    padding: 1px;
+    background-image: url('header2_bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  .textBox {
+    width: 20%;
+    padding: 12px 20px;
+  }
+
+  /* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 400px; /* Should be removed. Only for demonstration */
+}
+
+/* Left and right column */
+.column.left {
+  width: 20%;
+  border:2px solid DodgerBlue;
+  background-image: url('left_bg.jpg');
+}
+
+.column.right{
+  width: 20%;
+  border:2px solid DodgerBlue;
+}
+
+/* Middle column */
+.column.middle {
+  width: 60%;
+  border:2px solid DodgerBlue;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#login-middle{
+  font-weight: normal; 
+  font-variant: normal; 
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}

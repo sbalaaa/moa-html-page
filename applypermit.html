@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Permit</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/applypermit.css">
+</head>
+<body>
+    <div class="header">
+        <img src="images/top_bg.jpg" width="100%"/> 
+    </div>
+    <div class="login">
+        <img src="images/home.jpg">
+        <img src="images/help.jpg">
+        <span class="logout"><img src="images/logout.jpg"></span>
+    </div>
+    <div>
+        <table class=""  cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td class="mandatory" width="60">&nbsp;</td>
+				<td class="header-3" width="10">&nbsp;</td>
+				<td class="header-3"><i>Mandatory Fields</i></td>
+				<td class="view-only" width="60">&nbsp;</td>
+				<td class="header-3" width="10">&nbsp;</td>
+				<td class="header-3"><i>VIEW ONLY FIELDS</i></td>
+			</tr>
+		</table>
+        <br/>
+		<table class="TABLEBORDER" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td class="header-one">Import Permit Application</td>
+			</tr>
+		</table>
+    </div>
+    <div>
+        <table align="left" border="0" cellpadding="0" cellspacing="3" width="350">
+            <tbody><tr align="left" valign="top">
+                <td class="TDHEADER2" colspan="2">
+                <div align="left">ARRIVAL DETAILS</div>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td class="TDHEADER3" align="left" width="150"><span style="width: 150px; text-align: right;">Estimated Arrival
+                Date </span></td>
+                <td align="left" width="100"><input name="estimatedArrivalDate" maxlength="20" size="15" readonly="readonly" class="TEXTBOX" type="text"></td>
+                <td align="left"><span id="spnestimatedArrivalDate" style="display: none;"><a href="#" onclick="arrivalDate.select(document.forms[0].estimatedArrivalDate,'anchorwedate','yyyy-MM-dd'); return false;" name="anchorwedate" id="anchorwedate"><img src="applyPermit.do_files/cal.gif" height="8"></a> </span></td>
+            </tr>
+            <tr align="left" valign="top">
+                <td class="TDHEADER3" align="left" width="150"><span style="width: 150px; text-align: right;">Port of Entry</span></td>
+                <td align="left" width="100"><span id="selSpnPortOfEntry" style="display: none;"> 
+                    <select name="entryPort" class="TEXTBOX" style="width: 120px;" multiple="multiple">
+                        <option value="Kingston">Kingston</option>
+                        <option value="Montego Bay">Montego Bay</option>
+                    </select> <font size="2"> Use Ctrl Key to Select Multiple
+                Ports</font> </span> <span id="txtSpnPortOfEntry" style="display: block;"> <input class="TEXTBOX" name="portOfEntry" maxlength="20" size="15" type="text"> </span></td>
+            </tr>
+        </tbody></table>
+    </div>
+</body>
+</html>
